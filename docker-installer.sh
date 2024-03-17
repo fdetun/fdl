@@ -33,6 +33,7 @@ sudo systemctl start docker
 
 # Add the current user to the docker group to run docker commands without sudo
 sudo usermod -aG docker $USER
+sudo chmod 666 /var/run/docker.sock
 
 # Inform the user about logging out and back in again
 echo "You need to log out and log back in to apply group changes or you can use the 'newgrp docker' command in your current session."
